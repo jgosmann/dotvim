@@ -48,6 +48,9 @@ nnoremap <leader>w <C-w>v<C-w>l
 
 nmap <leader>f gqip
 
+" text bubbling
+vmap <D-Up> [egv
+vmap <D-Down> ]egv
 
 " vi settings
 set hidden
