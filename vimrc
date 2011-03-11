@@ -1,3 +1,4 @@
+" Load pathogen
 filetype off
 set nocompatible
 
@@ -6,10 +7,12 @@ call pathogen#runtime_append_all_bundles()
 
 filetype plugin on
 
+" Set colorscheme
 if has("gui_running")
     colorscheme wombat
 endif
 
+" Setup rainbow parenthesis
 autocmd BufRead,BufNew * call rainbow_parenthsis#LoadRound()
 autocmd BufRead,BufNew * call rainbow_parenthsis#LoadSquare()
 autocmd BufRead,BufNew * call rainbow_parenthsis#LoadBraces()
@@ -42,16 +45,6 @@ nnoremap j gj
 nnoremap k gk
 
 nnoremap <leader>w <C-w>v<C-w>l
-
-nmap <silent> <Leader>of :FSHere<cr>
-nmap <silent> <Leader>ol :FSRight<cr>
-nmap <silent> <Leader>oL :FSSplitRight<cr>
-nmap <silent> <Leader>oh :FSLeft<cr>
-nmap <silent> <Leader>oH :FSSplitLeft<cr>
-nmap <silent> <Leader>ok :FSAbove<cr>
-nmap <silent> <Leader>oK :FSSplitAbove<cr>
-nmap <silent> <Leader>oj :FSBelow<cr>
-nmap <silent> <Leader>oJ :FSSplitBelow<cr>
 
 nmap <leader>f gqip
 
@@ -124,5 +117,5 @@ autocmd filetype text,tex setlocal formatoptions+=tacw
 
 autocmd BufRead,BufNewFile * setlocal relativenumber
 
-autocmd BufEnter *.cc let b:fswitchdst = 'hh' | let b:fswitchlocs = '.'
+autocmd BufWritePost .vimrc source $MYVIMRC
 
