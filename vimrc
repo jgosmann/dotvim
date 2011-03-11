@@ -97,7 +97,7 @@ set showbreak=>
 
 " status line
 set ls=2
-set statusline=%n:\ %t%M%R%H%W%=[%02B]\ \ LF=%{&ff}\ T=%Y\ \ len=%L\ \ %3p%%\ %3l:%-2c\ 
+set statusline=%n:\ %t%M%R%H%W\ \ %{fugitive#statusline()}%=[%02B]\ \ LF=%{&ff}\ T=%Y\ \ len=%L\ \ %3p%%\ %3l:%-2c\ 
 
 " eclim
 let g:EclimMakeLCD=0
