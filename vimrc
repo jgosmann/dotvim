@@ -14,10 +14,10 @@ if has("gui_running")
 endif
 
 " Setup rainbow parenthesis
-autocmd BufRead,BufNew * call rainbow_parenthsis#LoadRound()
-autocmd BufRead,BufNew * call rainbow_parenthsis#LoadSquare()
-autocmd BufRead,BufNew * call rainbow_parenthsis#LoadBraces()
-autocmd BufRead,BufNew * call rainbow_parenthsis#LoadChevrons()
+"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadRound()
+"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadSquare()
+"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadBraces()
+"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadChevrons()
 
 " set font for MacVim
 set guifont=Monaco:h13
@@ -113,7 +113,6 @@ let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
 let g:SuperTabDefaultCompletionType ="context"
 
 " autocmd
-autocmd BufRead,BufNewFile *.txt setfiletype text
 autocmd filetype text setlocal nolist
 autocmd filetype text setlocal wrap
 autocmd filetype text setlocal linebreak
