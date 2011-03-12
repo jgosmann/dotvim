@@ -6,6 +6,7 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 filetype plugin on
+syntax enable
 
 " Set colorscheme
 if has("gui_running")
@@ -26,6 +27,8 @@ set guioptions-=T
 let mapleader="ö"
 imap jj <Esc>
 imap jJ <Esc>
+
+nmap <CR> <C-]>
 
 map <leader>o :TlistToggle<CR>
 imap <C-o> <Esc>:TlistToggle<CR><C-w>h
@@ -80,7 +83,6 @@ set nowrap
 set textwidth=80
 set colorcolumn=81
 set formatoptions=qrn1
-syntax enable
 
 " indentation
 filetype plugin indent on
@@ -115,10 +117,11 @@ autocmd BufRead,BufNewFile *.txt setfiletype text
 autocmd filetype text setlocal nolist
 autocmd filetype text setlocal wrap
 autocmd filetype text setlocal linebreak
-autocmd filetype text,tex setlocal formatoptions-=l
-autocmd filetype text,tex setlocal formatoptions+=tacw
+autocmd filetype text,tex,html setlocal formatoptions-=l
+autocmd filetype text,tex,html setlocal formatoptions+=tacw
 
 autocmd BufRead,BufNewFile * setlocal relativenumber
 
+autocmd! BufWritePost .vimrc
 autocmd BufWritePost .vimrc source $MYVIMRC
 
