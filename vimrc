@@ -41,8 +41,7 @@ nnoremap k gk
 
 nmap <CR> <C-]>
 
-nmap <C-f> :set fullscreen!<CR>
-imap <C-f> <Esc>:set fullscreen!<CR>a
+nmap <leader><C-f> :set fullscreen!<CR>
 
 map <leader><leader> <leader>t
 
