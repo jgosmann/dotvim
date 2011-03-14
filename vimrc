@@ -28,7 +28,16 @@ let mapleader="ö"
 imap jj <Esc>
 imap jJ <Esc>
 
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+nnoremap j gj
+nnoremap k gk
+
 nmap <CR> <C-]>
+
+map <leader><leader> <leader>t
 
 map <leader>o :TlistToggle<CR>
 imap <C-o> <Esc>:TlistToggle<CR><C-w>h
@@ -39,13 +48,6 @@ nnoremap <leader>u :GundoToggle<CR>
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
-
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-nnoremap j gj
-nnoremap k gk
 
 nnoremap <leader>w <C-w>v<C-w>l
 
