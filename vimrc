@@ -19,9 +19,13 @@ endif
 "autocmd BufRead,BufNew * call rainbow_parenthsis#LoadBraces()
 "autocmd BufRead,BufNew * call rainbow_parenthsis#LoadChevrons()
 
-" set font for MacVim
+" set font and other gui options for MacVim
 set guifont=Monaco:h13
 set guioptions-=T
+set guioptions+=c
+if has("gui_running")
+    set fuoptions=maxvert,maxhorz
+endif
 
 " some shortcuts
 let mapleader="ö"
@@ -36,6 +40,9 @@ nnoremap j gj
 nnoremap k gk
 
 nmap <CR> <C-]>
+
+nmap <C-f> :set fullscreen!<CR>
+imap <C-f> <Esc>:set fullscreen!<CR>a
 
 map <leader><leader> <leader>t
 
