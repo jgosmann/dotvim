@@ -64,6 +64,7 @@ vmap <D-Up> [egv
 vmap <D-Down> ]egv
 
 " vi settings
+runtime ftplugin/man.vim
 set hidden
 set encoding=utf-8
 set scrolloff=3
