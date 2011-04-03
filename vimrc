@@ -133,3 +133,5 @@ autocmd BufRead,BufNewFile * setlocal relativenumber
 autocmd! BufWritePost .vimrc
 autocmd BufWritePost .vimrc source $MYVIMRC
 
+autocmd BufWritePost *.snippets call ReloadAllSnippets()
+
