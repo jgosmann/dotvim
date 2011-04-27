@@ -5,6 +5,8 @@ set nocompatible
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+source ~/.vim/bundle/a/a.vim
+
 filetype plugin on
 syntax enable
 
@@ -118,6 +120,20 @@ let g:EclimMakeLCD=0
 
 " set ctags path for taglist
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
+
+set tags+=~/.vim/tags/stl
+set tags+=~/.vim/tags/qt
+
+"let OmniCpp_NamespaceSearch = 1 
+"let OmniCpp_GlobalScopeSearch = 1 
+"let OmniCpp_ShowAccess = 1 
+"let OmniCpp_MayCompleteDot = 1 
+"let OmniCpp_MayCompleteArrow = 1 
+"let OmniCpp_MayCompleteScope = 1 
+"let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"] 
+
+"au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif 
+set completeopt=menuone,menu,preview
 
 let g:SuperTabDefaultCompletionType ="context"
 
