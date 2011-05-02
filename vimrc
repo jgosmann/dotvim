@@ -8,6 +8,7 @@ call pathogen#runtime_append_all_bundles()
 source ~/.vim/bundle/a/a.vim
 
 filetype plugin on
+set foldlevel=2
 syntax enable
 
 " Set colorscheme
@@ -143,6 +144,8 @@ autocmd filetype text setlocal wrap
 autocmd filetype text setlocal linebreak
 autocmd filetype text,tex,html setlocal formatoptions-=l
 autocmd filetype text,tex,html setlocal formatoptions+=tacw
+
+autocmd filetype cpp,tex setlocal foldmethod=syntax
 
 autocmd BufRead,BufNewFile * setlocal relativenumber
 
