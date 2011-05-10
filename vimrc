@@ -12,9 +12,8 @@ set foldlevel=2
 syntax enable
 
 " Set colorscheme
-if has("gui_running")
-    colorscheme wombat
-endif
+set background=light
+colorscheme solarized
 
 " Setup rainbow parenthesis
 "autocmd BufRead,BufNew * call rainbow_parenthsis#LoadRound()
