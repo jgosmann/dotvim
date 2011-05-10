@@ -43,7 +43,7 @@ nnoremap k gk
 
 nmap <CR> <C-]>
 
-nmap <leader><C-f> :set fullscreen!<CR>
+nmap <D-CR> :set fullscreen!<CR>
 
 map <leader><leader> <leader>t
 
