@@ -22,7 +22,7 @@ colorscheme solarized
 "autocmd BufRead,BufNew * call rainbow_parenthsis#LoadChevrons()
 
 " set font and other gui options for MacVim
-set guifont=Monaco:h13
+set guifont=Menlo:h14
 set guioptions-=T
 set guioptions+=c
 if has("gui_running")
