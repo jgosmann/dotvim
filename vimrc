@@ -67,6 +67,8 @@ nmap <leader>b <C-w>s:make<CR>:q<CR>
 vmap <D-Up> [egv
 vmap <D-Down> ]egv
 
+let g:snips_trigger_key = '<m-tab>'
+
 " vi settings
 runtime ftplugin/man.vim
 set hidden
@@ -152,6 +154,4 @@ autocmd BufRead,BufNewFile * setlocal relativenumber
 
 autocmd! BufWritePost .vimrc
 autocmd BufWritePost .vimrc source $MYVIMRC
-
-autocmd BufWritePost *.snippets call ReloadAllSnippets()
 
