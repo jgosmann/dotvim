@@ -136,6 +136,11 @@ set tags+=~/.vim/tags/qt
 "let OmniCpp_MayCompleteScope = 1 
 "let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"] 
 
+let g:alternateExtensions_{'cc'} = "hh"
+let g:alternateExtensions_{'hh'} = "cc"
+let g:alternateExtensions_{'l'} = "y"
+let g:alternateExtensions_{'y'} = "l"
+
 "au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif 
 set completeopt=menuone,menu,preview
 
