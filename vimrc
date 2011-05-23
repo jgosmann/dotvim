@@ -98,6 +98,7 @@ set nowrap
 set textwidth=80
 set colorcolumn=81
 set formatoptions=qrn1
+set wildignore+=*.o
 
 " indentation
 filetype plugin indent on
