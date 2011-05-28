@@ -76,7 +76,6 @@ set encoding=utf-8
 set scrolloff=3
 set incsearch
 "set hlsearch
-set ignorecase
 set smartcase
 set gdefault
 set number
