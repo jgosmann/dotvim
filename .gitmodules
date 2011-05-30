@@ -12,7 +12,7 @@
 	url = http://github.com/sjl/gundo.vim.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
+	url = http://git.gitorious.org/dotvim_blubb/snipmate.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
