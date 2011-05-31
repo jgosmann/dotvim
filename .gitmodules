@@ -4,9 +4,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "bundle/easytags"]
-	path = bundle/easytags
-	url = https://github.com/vim-scripts/easytags.vim.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
@@ -37,3 +34,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = http://git.gitorious.org/dotvim_blubb/snipmate.git
+[submodule "bundle/ctags-highlighting"]
+	path = bundle/ctags-highlighting
+	url = https://github.com/vim-scripts/CTAGS-Highlighting.git

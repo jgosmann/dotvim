@@ -124,9 +124,7 @@ let g:EclimMakeLCD=0
 
 " set ctags path for taglist
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
-
-set tags+=~/.vim/tags/stl
-set tags+=~/.vim/tags/qt
+let OmniCpp_ShowPrototypeInAbbr = 1
 
 "let OmniCpp_NamespaceSearch = 1 
 "let OmniCpp_GlobalScopeSearch = 1 
