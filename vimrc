@@ -14,6 +14,17 @@ syntax enable
 " Set colorscheme
 set background=light
 colorscheme solarized
+hi link DefinedName PreProc
+hi link GlobalConstant Constant
+hi link Enumerator Constant
+hi link LocalVariable Identifier
+hi link GlobalVariable Identifier
+hi link Function Identifier
+hi link Member Identifier
+hi link Class Type
+hi link Union Type
+hi link Structure Type
+hi link EnumerationName Type
 
 " Setup rainbow parenthesis
 "autocmd BufRead,BufNew * call rainbow_parenthsis#LoadRound()
