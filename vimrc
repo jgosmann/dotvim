@@ -26,6 +26,20 @@ hi link Union Type
 hi link Structure Type
 hi link EnumerationName Type
 
+if has("cscope")
+    set csprg=/opt/local/bin/cscope
+    set csto=0
+    set nocsverb
+    " add any database in current directory
+    if filereadable("cscope.out")
+        cs add cscope.out
+        " else add database pointed to by environment
+    elseif $CSCOPE_DB != ""
+        cs add $CSCOPE_DB
+    endif
+    set csverb
+endif
+
 " Setup rainbow parenthesis
 "autocmd BufRead,BufNew * call rainbow_parenthsis#LoadRound()
 "autocmd BufRead,BufNew * call rainbow_parenthsis#LoadSquare()
