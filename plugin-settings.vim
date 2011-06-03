@@ -32,7 +32,7 @@ runtime ftplugin/man.vim
 let OmniCpp_ShowPrototypeInAbbr = 1
 
 " snipmate
-let g:snips_trigger_key = '<D-CR>'
+"let g:snips_trigger_key = '<CR>'
 
 " supertab
 let g:SuperTabDefaultCompletionType ="context"
