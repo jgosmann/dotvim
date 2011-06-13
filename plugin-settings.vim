@@ -30,12 +30,15 @@ runtime ftplugin/man.vim
 
 " omnicpp
 let OmniCpp_ShowPrototypeInAbbr = 1
+let OmniCpp_MayCompleteDot = 0
+let OmniCpp_MayCompleteArrow = 0
 
 " snipmate
-"let g:snips_trigger_key = '<CR>'
+let g:snips_trigger_key = '<C-CR>'
 
 " supertab
-let g:SuperTabDefaultCompletionType ="context"
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 " taglist
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
