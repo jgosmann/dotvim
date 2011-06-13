@@ -16,6 +16,7 @@ autocmd filetype text setlocal linebreak
 autocmd filetype text setlocal nolist
 set relativenumber
 set scrolloff=3
+set spell
 set textwidth=80
 set ttyfast
 set undofile
