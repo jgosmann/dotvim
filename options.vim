@@ -17,6 +17,7 @@ autocmd filetype text setlocal nolist
 set relativenumber
 set scrolloff=3
 set spell
+autocmd filetype glsl* setlocal nospell
 set textwidth=80
 set ttyfast
 set undofile

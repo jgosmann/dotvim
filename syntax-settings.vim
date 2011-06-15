@@ -20,3 +20,5 @@ highlight Trailspaces guifg=#8a8aa9
 match TrailSpaces /\s\+$/
 set showbreak=>
 
+autocmd BufNewFile,BufRead *.frag,*.fs,*.glsl setfiletype glsl400
+
