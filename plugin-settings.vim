@@ -5,9 +5,14 @@ let g:alternateExtensions_{'hh'} = "cc"
 let g:alternateExtensions_{'l'} = "y"
 let g:alternateExtensions_{'y'} = "l"
 
+" ConqueTerm
+let g:ConqueTerm_Color = 1
+let g:ConqueTerm_EscKey = 'jj'
+let g:ConqueTerm_TERM = 'xterm'
+
 " cscope
 " Code copied from the vim help, but removed line to use cscope also
-    " for normal tag searches.
+" for normal tag searches.
 if has("cscope")
     set csprg=/opt/local/bin/cscope
     set csto=0
