@@ -30,6 +30,10 @@ endif
 " eclim
 let g:EclimMakeLCD=0
 
+" gist
+let g:gist_clip_command = 'pbcopy'
+let g:gist_detect_filetype = 1
+
 " Man pages
 runtime ftplugin/man.vim
 
