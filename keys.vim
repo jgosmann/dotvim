@@ -1,6 +1,19 @@
-" edit modes
-inoremap jj <Esc>
-inoremap jJ <Esc>
+" leader key
+let mapleader = "ü"
+
+" Neo2 remappings
+noremap s h
+noremap n gj
+noremap r gk
+noremap t l
+" kill
+noremap k s
+" jump
+noremap j n
+" hide
+noremap h r
+" lookup
+noremap l t
 
 " fullscreen
 nnoremap <D-CR> :set fullscreen!<CR>
@@ -10,10 +23,10 @@ noremap j gj
 noremap k gk
 
 " windows
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
+noremap <C-s> <C-w>h
+noremap <C-n> <C-w>j
+noremap <C-r> <C-w>k
+noremap <C-t> <C-w>l
 
 " quickly edit vimrc
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
