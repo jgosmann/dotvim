@@ -23,7 +23,7 @@ set ttyfast
 set undofile
 set undolevels=1000
 set visualbell
-set wildignore=*.bak,*.class,*.o,*.pyc,*.swp,*.un~
+set wildignore=*.bak,*.class,*.o,*.pyc,*.swp,*.un~,moc_*.cpp,ui_*.h
 set wildmenu
 set wildmode=list:longest
 set nowrap
