@@ -47,7 +47,7 @@ let g:snips_trigger_key = '<C-CR>'
 
 " supertab
 let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-n>"
 
 " taglist
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
