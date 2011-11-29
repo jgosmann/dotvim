@@ -1,6 +1,8 @@
 set backspace=indent,eol,start
 set nobackup
-set colorcolumn=81
+if has("colorcolumn")
+    set colorcolumn=81
+endif
 set completeopt=menuone,menu,preview
 set cursorline
 set gdefault
@@ -14,13 +16,19 @@ set history=1000
 set incsearch
 autocmd filetype text setlocal linebreak
 autocmd filetype text setlocal nolist
-set relativenumber
+if has("relativenumber")
+    set relativenumber
+else
+    set number
+endif
 set scrolloff=3
 set spell
 autocmd filetype glsl* setlocal nospell
 set textwidth=80
 set ttyfast
-set undofile
+if has("undofile")
+    set undofile
+endif
 set undolevels=1000
 set visualbell
 set wildignore=*.bak,*.class,*.o,*.pyc,*.swp,*.un~,moc_*.cpp,ui_*.h
