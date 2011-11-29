@@ -567,6 +567,17 @@ function! eclim#util#MakeWithCompiler(compiler, bang, args, ...)
     set shellpipe=>\ %s\ 2<&1
   endif
 
+  if a:compiler =~ 'ant\|maven\|mvn'
+    runtime autoload/eclim/java/test.vim
+    if exists('*eclim#java#test#ResolveQuickfixResults')
+      augroup eclim_make_java_test
+        autocmd!
+        autocmd QuickFixCmdPost make
+          \ call eclim#java#test#ResolveQuickfixResults(['junit', 'testng'])
+      augroup END
+    endif
+  endif
+
   try
     unlet! g:current_compiler b:current_compiler
     exec 'compiler ' . a:compiler
@@ -599,6 +610,9 @@ function! eclim#util#MakeWithCompiler(compiler, bang, args, ...)
       call eclim#util#EchoTrace('make: ' . make_cmd)
       exec 'make' . a:bang . ' ' . a:args
     endif
+  catch /E42\>/
+    " ignore 'E42: No Errors' which occurs when the make has qf results, but a
+    " QuickFixCmdPost filters them all out.
   finally
     if exists('saved_compiler')
       unlet! g:current_compiler b:current_compiler
@@ -615,6 +629,8 @@ function! eclim#util#MakeWithCompiler(compiler, bang, args, ...)
       exec 'lcd ' . escape(w:quickfix_dir, ' ')
       unlet w:quickfix_dir
     endif
+
+    silent! autocmd! eclim_make_java_test
   endtry
 endfunction " }}}
 
@@ -962,7 +978,7 @@ endfunction " }}}
 " ShowCurrentError() {{{
 " Shows the error on the cursor line if one.
 function! eclim#util#ShowCurrentError()
-  if mode() != 'n'
+  if mode() != 'n' || expand('%') == ''
     return
   endif
 

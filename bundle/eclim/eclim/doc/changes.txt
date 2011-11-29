@@ -1,11 +1,92 @@
 History of Changes
 ******************
 
+*1.7.2*
+
+
+1.7.2 (Sep. 10, 2011)
+=====================
+
+Bug Fixes:
+   - Various small bug fixes.
+
+Installer:
+   - Fixed deadlock on the vim install dir pane for java 7.
+
+Eclipse:
+   - Disabled listening for change events on embedded gvim. Should fix
+     most causes of gvim crashing.
+
+   - Other improvements for embedded gvim support.
+
+Eclimd:
+   - Improved OSX detection.
+
+   - Fix for passing jvm args to java when supplied as args to eclimd
+     script.
+
+Java:
+   - Fix passing of dash prefixed :Java args (ex. -p) to the class to
+     be run.
+
+Php:
+   - Improved completion of magic properties.
+
+   - Support new php 5.3 version in pdt.
+
+*1.7.1*
+
+
+1.7.1 (Jul. 02, 2011)
+=====================
+
+Bug Fixes:
+   - Fixed org.eclipse.swt.SWTError: Not implemented [multiple
+     displays] error when starting the eclipse gui after running
+     eclimd.
+
+Eclipse:
+   - Enable vim embedding on Solaris, AIX, and HP-UX versions of
+     eclipse.
+
+*1.7.0*
+
+
+1.7.0 (Jun. 26, 2011)
+=====================
+
+Bug Fixes:
+   - Bug fixes for eclipse 3.7 (Indigo) compatability.
+
+   - Other bug fixes.
+
+Eclipse:
+   - Eclim now requires the latest version of eclipse (Indigo, 3.7).
+
+*1.6.3*
+
+
+1.6.3 (Apr. 16, 2011)
+=====================
+
+Bug Fixes:
+   - Fixed bug where one or more closed projects would prevent working
+     with open projects.
+
+   - Other small bug fixes.
+
+Installer:
+   - Prevent possible OutOfMemoryError when invoking eclipse to
+     install plugin dependencies by setting a larger heap space.
+
+Java:
+   - Added |:JavaClasspath| to echo the project's current classpath.
+
 *1.6.2*
 
 
-1.6.2 (2011-02-26)
-==================
+1.6.2 (Feb. 26, 2011)
+=====================
 
 Bug Fixes:
    - Fixed to use %USERPROFILE% on windows to retrieve the user home
@@ -70,8 +151,8 @@ Other:
 *1.6.1*
 
 
-1.6.1 (2010-10-23)
-==================
+1.6.1 (Oct. 23, 2010)
+=====================
 
 Bug Fixes:
    - Fix for |:ProjectProblems| command when any filters have been set

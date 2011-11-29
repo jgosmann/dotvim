@@ -220,6 +220,9 @@ Java Commands
 
 - |:Javac| - Executes the javac utility against all source files.
 
+- |:JavaClasspath| [-d <delim>] - Echos the project's classpath
+  delimited by the system path separator or the supplied delimiter.
+
 - |:Javadoc| [file, file, ...] - Executes the javadoc utility against
   all or just the supplied source files.
 

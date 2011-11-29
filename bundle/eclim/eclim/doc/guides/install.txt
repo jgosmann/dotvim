@@ -14,7 +14,7 @@ following requirements.
 - Java Development Kit
   (http://java.sun.com/javase/downloads/index.html) 1.5 or greater
 
-- Eclipse 3.6.x (Helios) (http://eclipse.org/downloads/index.php)
+- Eclipse 3.7.x (Indigo) (http://eclipse.org/downloads/index.php)
 
 - Vim 7.1.x (http://www.vim.org/download.php)
 

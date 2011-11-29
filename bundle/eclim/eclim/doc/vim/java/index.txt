@@ -35,6 +35,8 @@ Java
   - Configuration (#configuration)
   - Executing javac (#executing-javac)
   - Configuration (#id1)
+  - Echo the classpath for the current project
+    (#echo-the-classpath-for-the-current-project)
   - Viewing list of known JDKs/JREs installed
     (#viewing-list-of-known-jdks-jres-installed)
 - Javadoc Support ()
