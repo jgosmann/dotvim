@@ -6,22 +6,19 @@ noremap s h
 noremap n gj
 noremap r gk
 noremap t l
-ounmap s
-ounmap n
-ounmap r
-ounmap t
 " kill
 noremap k s
-ounmap k
 " jump
 noremap j n
-ounmap j
 " hide
 noremap h r
-ounmap h
 " lookup
 noremap l t
-ounmap l
+
+" Some useful shortcuts
+nmap ö :b#<CR>
+nmap Ö :A<CR>
+nmap ä <C-]>
 
 " fullscreen
 nnoremap <D-CR> :set fullscreen!<CR>
