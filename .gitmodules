@@ -31,12 +31,12 @@
 [submodule "bundle/ctags-highlighting"]
 	path = bundle/ctags-highlighting
 	url = https://github.com/vim-scripts/CTAGS-Highlighting.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/jgosmann/vim-snipmate.git
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = https://github.com/mattn/gist-vim.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = https://github.com/wincent/Command-T
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://jgosmann@github.com/jgosmann/vim-snipmate.git
