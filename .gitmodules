@@ -39,4 +39,7 @@
 	url = https://github.com/wincent/Command-T
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = https://jgosmann@github.com/jgosmann/vim-snipmate.git
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/snippets"]
+	path = bundle/snippets
+	url = https://jgosmann@github.com/jgosmann/snipmate-snippets.git
