@@ -8,8 +8,8 @@ Installation
        out one level of submodules. Moreover, some of the submodules in deeper
        levels use the git:// protocol (instead of https://) which may be
        blocked by firewalls.
-3. ln -s ~/.vim/vimrc ~/.vimrc
-4. cd ~/.vim/bundle/command-t/ruby/command-t/
-5. ruby extconf.rb
-6. make
+3. `ln -s ~/.vim/vimrc ~/.vimrc`
+4. `cd ~/.vim/bundle/command-t/ruby/command-t/`
+5. `ruby extconf.rb`
+6. `make`
 
