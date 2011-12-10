@@ -1,6 +1,6 @@
 set backspace=indent,eol,start
 set nobackup
-if has("colorcolumn")
+if v:version >= 703
     set colorcolumn=81
 endif
 set completeopt=menuone,menu,preview
@@ -16,7 +16,7 @@ set history=1000
 set incsearch
 autocmd filetype text setlocal linebreak
 autocmd filetype text setlocal nolist
-if has("relativenumber")
+if v:version >= 703
     set relativenumber
 else
     set number
