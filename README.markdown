@@ -50,7 +50,10 @@ Please note that in operator pending mode (e.g. when pressing just `d`) you
 still have to use the original `t` command instead of the redefined `l` command.
 I think, this comes from the implementation of the YankRing plugin.
 
-You can deactivate these special remappings by TODO.
+You can deactivate these special remappings by commenting the following line in
+~/.vim/vimrc:
+
+`source ~/.vim/keys-neo2.vim`
 
 Included Plugins
 ================

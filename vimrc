@@ -18,6 +18,7 @@ source ~/.vim/options.vim
 source ~/.vim/plugin-keys.vim
 source ~/.vim/plugin-settings.vim
 source ~/.vim/keys.vim
+source ~/.vim/keys-neo2.vim
 
 source ~/.vim/functions.vim
 
