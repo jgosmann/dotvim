@@ -7,7 +7,6 @@ let g:alternateExtensions_{'y'} = "l"
 
 " ConqueTerm
 let g:ConqueTerm_Color = 1
-let g:ConqueTerm_EscKey = 'jj'
 let g:ConqueTerm_TERM = 'xterm'
 
 " cscope
