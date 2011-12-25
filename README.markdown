@@ -62,28 +62,27 @@ You can deactivate these special remappings by commenting the following line in
 Included Plugins
 ================
 
-- a.vim
-- Command-t
-- Conque
-- Ctags-highlighting
-- Fugitive
-- Gist
-- GLSL
-- Gundo
-- mw-utils
-- Nerd Commenter
-- OmniCpp
-- Pathogen
-- Rainbow Parenthesis
-- Snipmate
-- Solarized
-- Supertab
-- Surround
-- Taglist
-- tlib
-- unimpaired
-- vim-latex
-- vimsh
-- yankring
-- zoomwin
+- [a.vim](http://www.vim.org/scripts/script.php?script_id=31)
+- [Command-t](https://wincent.com/products/command-t)
+- [Conque](http://code.google.com/p/conque/)
+- [Ctags-highlighting](http://www.cgtk.co.uk/vim-scripts/taghighlight)
+- [Fugitive](https://github.com/tpope/vim-fugitive)
+- [Gist](https://github.com/mattn/gist-vim)
+- [GLSL](http://www.vim.org/scripts/script.php?script_id=1002)
+- [Gundo](http://sjl.bitbucket.org/gundo.vim/)
+- [mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)
+- [Nerd Commenter](http://www.vim.org/scripts/script.php?script_id=1218)
+- [OmniCpp](http://www.vim.org/scripts/script.php?script_id=1520)
+- [Pathogen](https://github.com/tpope/vim-pathogen)
+- [Rainbow Parenthesis](http://www.vim.org/scripts/script.php?script_id=1561)
+- [Snipmate](http://www.vim.org/scripts/script.php?script_id=2540)
+- [Solarized](http://ethanschoonover.com/solarized)
+- [Supertab](http://www.vim.org/scripts/script.php?script_id=1643)
+- [Surround](https://github.com/tpope/vim-surround)
+- [Taglist](http://vim-taglist.sourceforge.net/)
+- [tlib](http://www.vim.org/scripts/script.php?script_id=1863)
+- [unimpaired](http://www.vim.org/scripts/script.php?script_id=1590)
+- [vim-latex](http://vim-latex.sourceforge.net/)
+- [yankring](http://www.vim.org/scripts/script.php?script_id=1234)
+- [zoomwin](http://www.vim.org/scripts/script.php?script_id=508)
 
