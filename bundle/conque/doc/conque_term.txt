@@ -276,11 +276,12 @@ program output in insert mode.
 >
     let g:ConqueTerm_CloseOnEnd = 0
 <
-3.1.8 Hide start messages                           *ConqueTerm_StartMessages*
+3.1.8 Show start messages                           *ConqueTerm_StartMessages*
 
-Unused. Startup messages are always hidden.
+Display warning messages when starting up ConqueTerm if your system is
+configured incorrectly.
 >
-    let g:ConqueTerm_StartMessages = 0
+    let g:ConqueTerm_StartMessages = 1
 <
 3.1.9 Regex for highlighting your prompt              *ConqueTerm_PromptRegex*
 
@@ -293,10 +294,10 @@ syntax highlighting for the prompt line.
 <
 3.1.10 Choose Vim syntax type                              *ConqueTerm_Syntax*
 
-Set the buffer syntax. The default 'conque' has highlighting for MySQL, but 
-not much else.
+Set the buffer syntax. The default 'conque_term' has highlighting for MySQL, 
+but not much else.
 >
-    let g:ConqueTerm_Syntax = 'conque'
+    let g:ConqueTerm_Syntax = 'conque_term'
 <
 3.2 Keyboard                                          *conque-config-keyboard*
 
@@ -414,10 +415,10 @@ buffer. Set this to an empty string '' to disable concealed highlighting.
 <
 ==============================================================================
 
-4. VimScript API (Beta)                                      *conque-term-api*
+4. VimScript API                                             *conque-term-api*
 
 The Conque scripting API allows you to create and interact with Conque
-terminals with the VimScript language. This API is still in beta stage.
+terminals with the VimScript language.
 
 4.1 conque_term#open({command}, [buf_opts], [remain])       *conque-term-open*
 
