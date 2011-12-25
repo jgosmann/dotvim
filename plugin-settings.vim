@@ -33,6 +33,17 @@ let g:EclimMakeLCD=0
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 
+" vim-latex
+" See http://mactex-wiki.tug.org/wiki/index.php/SyncTeX for configuration
+" examples.
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode $*'
+if has('macunix')
+    let g:Tex_ViewRule_pdf = 'Skim'
+endif
+
+let g:Tex_MultipleCompileFormats = 'dvi,pdf'
+
 " Man pages
 runtime ftplugin/man.vim
 
