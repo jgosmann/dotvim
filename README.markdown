@@ -66,7 +66,6 @@ Included Plugins
 - Command-t
 - Conque
 - Ctags-highlighting
-- eclim (TODO exclude)
 - Fugitive
 - Gist
 - GLSL
