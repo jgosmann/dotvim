@@ -1,8 +1,8 @@
 filetype off
 set nocompatible
 
+call pathogen#infect()
 call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
 
 filetype plugin on
 
