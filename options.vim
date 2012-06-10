@@ -16,11 +16,7 @@ set history=1000
 set incsearch
 autocmd filetype text setlocal linebreak
 autocmd filetype text setlocal nolist
-if v:version >= 703
-    set relativenumber
-else
-    set number
-endif
+set number
 set scrolloff=3
 set spell
 autocmd filetype glsl* setlocal nospell
