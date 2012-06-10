@@ -21,3 +21,6 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 " format inner paragraph
 nnoremap <leader>f gqip
 
+" quick git commits
+nnoremap <leader>g :Gcommit -a<CR>i
+
