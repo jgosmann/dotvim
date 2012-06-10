@@ -10,7 +10,7 @@ set encoding=utf-8
 set foldlevel=2
 autocmd filetype cpp,tex setlocal foldmethod=syntax
 set formatoptions=qrn1c
-autocmd filetype html,tex,text setlocal formatoptions+=taw
+autocmd filetype tex,text setlocal formatoptions+=taw
 set hidden
 set history=1000
 set incsearch
@@ -35,5 +35,5 @@ set wildignore=*.bak,*.class,*.o,*.pyc,*.swp,*.un~,moc_*.cpp,ui_*.h
 set wildmenu
 set wildmode=list:longest
 set nowrap
-autocmd filetype text setlocal wrap
+autocmd filetype text,html setlocal wrap
 
