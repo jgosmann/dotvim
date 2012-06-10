@@ -12,6 +12,10 @@ noremap h r
 " lookup
 noremap l t
 
+" Allow arrow keys in file browser
+autocmd filetype netrw noremap <buffer> <Up> <Up>
+autocmd filetype netrw noremap <buffer> <Down> <Down>
+
 function! FixConqueKeys(term)
     sil exe 'noremap <silent> <buffer> s h'
     sil exe 'noremap <silent> <buffer> r gk'
