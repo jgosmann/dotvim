@@ -19,7 +19,7 @@ autocmd filetype text setlocal nolist
 set number
 set scrolloff=3
 set spell
-autocmd filetype glsl* setlocal nospell
+autocmd filetype matlab,glsl* setlocal nospell
 set textwidth=80
 set ttyfast
 if has("undofile")
