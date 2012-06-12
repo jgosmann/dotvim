@@ -1,0 +1,2 @@
+iunmap <buffer> <s-tab>
+

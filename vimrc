@@ -4,7 +4,7 @@ set nocompatible
 call pathogen#infect()
 call pathogen#helptags()
 
-filetype plugin on
+filetype plugin indent on
 
 autocmd! BufWritePost .vimrc
 autocmd BufWritePost .vimrc source $MYVIMRC

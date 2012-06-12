@@ -28,6 +28,7 @@ endif
 
 " eclim
 let g:EclimMakeLCD=0
+let g:EclimPythonValidate=0
 
 " gist
 let g:gist_clip_command = 'pbcopy'
@@ -52,12 +53,17 @@ let OmniCpp_ShowPrototypeInAbbr = 1
 let OmniCpp_MayCompleteDot = 0
 let OmniCpp_MayCompleteArrow = 0
 
+" python-mode
+let no_py_maps = 1
+let g:pymode_lint_checker = "pyflakes,mccabe"
+
 " snipmate
 let g:snips_trigger_key = '<C-CR>'
 
 " supertab
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-n>"
+let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 
 " taglist
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
