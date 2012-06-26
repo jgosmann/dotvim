@@ -50,14 +50,23 @@ navigate like usual:
 - `h` (“hide”) acts like the original `r` (“replace”) command.
 - `l` (“look up”) acts like the original `t` (“to”) command.
 
-Please note that in operator pending mode (e.g. when pressing just `d`) you
-still have to use the original `t` command instead of the redefined `l` command.
-I think, this comes from the implementation of the YankRing plugin.
-
 You can deactivate these special remappings by commenting the following line in
 ~/.vim/vimrc:
 
 `source ~/.vim/keys-neo2.vim`
+
+### Caveats
+
+Please note that in operator pending mode (e.g. when pressing just `d`) you
+still have to use the original `t` command instead of the redefined `l` command.
+I think, this comes from the implementation of the YankRing plugin.
+
+Also, the netrw filebrowser does not allow you to use the homerow to navigate
+given the active Neo2 remappings (actually, the `n` key will work, but the `r`
+key not for example). Therefore, I allow upwards and downwards movement in the
+file browser with the `<Up>` and `<Down>` keys. Of course these can then not be
+used to switch windows when in the filebrowser (use `<C-w><Up>` and
+`<C-w><Down>` instead).
 
 Included Plugins
 ================
@@ -74,6 +83,7 @@ Included Plugins
 - [Nerd Commenter](http://www.vim.org/scripts/script.php?script_id=1218)
 - [OmniCpp](http://www.vim.org/scripts/script.php?script_id=1520)
 - [Pathogen](https://github.com/tpope/vim-pathogen)
+- [python-mode](https://github.com/klen/python-mode)
 - [Rainbow Parenthesis](http://www.vim.org/scripts/script.php?script_id=1561)
 - [Snipmate](http://www.vim.org/scripts/script.php?script_id=2540)
 - [Solarized](http://ethanschoonover.com/solarized)
