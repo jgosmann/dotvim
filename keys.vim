@@ -6,6 +6,9 @@ nmap ö :b#<CR>
 nmap Ö :A<CR>
 nmap ä <C-]>
 
+" fix number with unit in LaTeX Document
+nmap <leader>u :s/\(\d\+\)\s*\(\w\+\)/$\\unit[\1]{\2}$<CR>
+
 " fullscreen
 nnoremap <D-CR> :set fullscreen!<CR>
 
