@@ -3,6 +3,7 @@ set nocompatible
 
 call pathogen#infect()
 call pathogen#helptags()
+call ipi#inspect()
 
 filetype plugin indent on
 
@@ -10,6 +11,9 @@ autocmd! BufWritePost .vimrc
 autocmd BufWritePost .vimrc source $MYVIMRC
 autocmd! BufWritePost ~/.vim/*.vim
 autocmd BufWritePost ~/.vim/*.vim source $MYVIMRC
+
+autocmd BufReadPre *.py IP python-mode
+autocmd BufNewFile *.py IP python-mode
 
 source ~/.vim/interface-settings.vim
 source ~/.vim/syntax-settings.vim

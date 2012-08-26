@@ -43,6 +43,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/python-mode"]
-	path = bundle/python-mode
+[submodule "ipi/python-mode"]
+	path = ipi/python-mode
 	url = git://github.com/klen/python-mode.git
