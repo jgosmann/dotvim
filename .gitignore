@@ -1,3 +1,4 @@
 bundle/eclim
 .netrwhist
 *.pyc
+*.spl
