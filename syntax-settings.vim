@@ -21,4 +21,5 @@ match TrailSpaces /\s\+$/
 set showbreak=>
 
 autocmd BufNewFile,BufRead *.frag,*.fs,*.glsl setfiletype glsl400
+autocmd BufNewFile,BufRead *.ino setfiletype arduino
 

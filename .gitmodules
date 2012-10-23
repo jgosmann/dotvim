@@ -46,3 +46,6 @@
 [submodule "ipi/python-mode"]
 	path = ipi/python-mode
 	url = git://github.com/klen/python-mode.git
+[submodule "bundle/arduino-syntax"]
+	path = bundle/arduino-syntax
+	url = https://github.com/vim-scripts/Arduino-syntax-file.git
