@@ -5,8 +5,7 @@ nnoremap <leader>u :GundoToggle<CR>
 noremap <leader>r :ToggleRaibowParenthesis<CR>
 
 " taglist
-noremap <leader>o :TlistToggle<CR>
-inoremap <C-o> <Esc>:TlistToggle<CR><C-w>h
+noremap <C-l> :TlistToggle<CR>
 
 " unimpaired: text bubbling
 vmap <D-Up> [egv
