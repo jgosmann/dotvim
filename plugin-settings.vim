@@ -37,13 +37,17 @@ let g:gist_detect_filetype = 1
 " vim-latex
 " See http://mactex-wiki.tug.org/wiki/index.php/SyncTeX for configuration
 " examples.
-let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode $*'
-if has('macunix')
-    let g:Tex_ViewRule_pdf = 'Skim'
-endif
+"let g:Tex_DefaultTargetFormat = 'pdf'
+"let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode $*'
+"if has('macunix')
+    "let g:Tex_ViewRule_pdf = 'Skim'
+"endif
 
-let g:Tex_MultipleCompileFormats = 'dvi,pdf'
+"let g:Tex_MultipleCompileFormats = 'dvi,pdf'
+
+" latex-box
+let g:LatexBox_Folding = 1
+let g:LatexBox_viewer = 'open -a Skim'
 
 " Man pages
 runtime ftplugin/man.vim
@@ -63,7 +67,16 @@ let g:pymode_lint_checker = "pyflakes,mccabe"
 let g:snips_trigger_key = '<C-CR>'
 
 " supertab
+function! LatexTagContext()
+    let curline = getline('.')
+    let cnum = col('.')
+    if (&ft == 'tex' && curline =~ '.*\\\S\+\%' . cnum . 'c')
+        return "\<c-x>\<c-o>"
+    endif
+endfunction
+
 let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabCompletionContexts = ['LatexTagContext', 's:ContextText', 's:ContextDiscover']
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-n>"
 let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 

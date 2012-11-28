@@ -8,7 +8,7 @@ set cursorline
 set gdefault
 set encoding=utf-8
 set foldlevel=2
-autocmd filetype cpp,tex setlocal foldmethod=syntax
+autocmd filetype cpp setlocal foldmethod=syntax
 set formatoptions=qrn1c
 autocmd filetype tex,text setlocal formatoptions+=taw
 set hidden

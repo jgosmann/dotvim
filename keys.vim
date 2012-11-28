@@ -1,5 +1,6 @@
 " leader key
 let mapleader = "ü"
+let maplocalleader = "ü"
 
 " Some useful shortcuts
 nmap ö :b#<CR>
