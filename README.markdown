@@ -29,12 +29,8 @@ In normal mode:
 - `<leader>f` formats the current paragraph (`gqip`).
 - `<leader>u` toggle Gundo plugin.
 - `<leader>r` toggle Rainbow parenthesis plugin.
-- `<leader>o` toggle the Taglist plugin.
+- `<C-l>` toggle the Taglist plugin.
 - `<leader>ev` opens the .vimrc file.
-
-In insert mode:
-
-- `<C-o>` toggles the Taglist plugin.
 
 Neo2 Keyboard Layout remappings
 -------------------------------

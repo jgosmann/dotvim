@@ -20,5 +20,6 @@ highlight Trailspaces guifg=#8a8aa9
 match TrailSpaces /\s\+$/
 set showbreak=>
 
-autocmd BufNewFile,BufRead *.frag,*.fs,*.glsl setfiletype glsl400
+autocmd BufNewFile,BufRead *.frag,*.fs,*.glsl set filetype=glsl400
+autocmd BufNewFile,BufRead *.ino set filetype=arduino
 

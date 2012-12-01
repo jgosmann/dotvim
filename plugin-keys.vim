@@ -1,12 +1,14 @@
 " gundo
 nnoremap <leader>u :GundoToggle<CR>
 
+" latex-box
+nmap <silent> <Leader>ls :silent !/Applications/Skim.app/Contents/SharedSupport/displayline <C-R>=line('.')<CR> "<C-R>=LatexBox_GetOutputFile()<CR>" "%:p" <CR>
+
 " rainbow parenthesis
 noremap <leader>r :ToggleRaibowParenthesis<CR>
 
 " taglist
-noremap <leader>o :TlistToggle<CR>
-inoremap <C-o> <Esc>:TlistToggle<CR><C-w>h
+noremap <C-l> :TlistToggle<CR>
 
 " unimpaired: text bubbling
 vmap <D-Up> [egv
