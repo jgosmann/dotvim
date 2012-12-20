@@ -77,7 +77,8 @@ Included Plugins
 - [GLSL](http://www.vim.org/scripts/script.php?script_id=1002)
 - [Gundo](http://sjl.bitbucket.org/gundo.vim/)
 - [IPI](https://github.com/jceb/vim-ipi)
-- [latex-box](https://github.com/LaTeX-Box-Team/LaTeX-Box)
+- [latex-box](https://github.com/LaTeX-Box-Team/LaTeX-Box) (will only be loaded
+  for LaTeX files)
 - [mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)
 - [Nerd Commenter](http://www.vim.org/scripts/script.php?script_id=1218)
 - [OmniCpp](http://www.vim.org/scripts/script.php?script_id=1520) (will only be

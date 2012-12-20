@@ -50,5 +50,5 @@
 	path = bundle/arduino-syntax
 	url = https://github.com/vim-scripts/Arduino-syntax-file.git
 [submodule "bundle/latex-box"]
-	path = bundle/latex-box
+	path = ipi/latex-box
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
