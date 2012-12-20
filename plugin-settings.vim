@@ -1,6 +1,6 @@
 " a.vim
 source ~/.vim/bundle/a/a.vim
-let g:alternateExtensions_{'cc'} = "hh"
+let g:alternateExtensions_{'cc'} = "h,hh"
 let g:alternateExtensions_{'hh'} = "cc"
 let g:alternateExtensions_{'l'} = "y"
 let g:alternateExtensions_{'y'} = "l"
