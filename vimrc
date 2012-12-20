@@ -14,6 +14,8 @@ autocmd BufWritePost ~/.vim/*.vim source $MYVIMRC
 
 autocmd BufReadPre *.py IP python-mode
 autocmd BufNewFile *.py IP python-mode
+autocmd BufReadPre *.h,*.hh,*.hu,*.c,*.cc,*.cu,*.cpp IP omnicpp
+autocmd BufNewFile *.h,*.hh,*.hu,*.c,*.cc,*.cu,*.cpp IP omnicpp
 
 source ~/.vim/interface-settings.vim
 source ~/.vim/syntax-settings.vim
