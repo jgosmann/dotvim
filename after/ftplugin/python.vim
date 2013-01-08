@@ -1,2 +1,2 @@
-iunmap <buffer> <s-tab>
+silent! iunmap <buffer> <s-tab>
 
