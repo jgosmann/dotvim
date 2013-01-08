@@ -12,9 +12,9 @@ autocmd BufWritePost .vimrc source $MYVIMRC
 autocmd! BufWritePost ~/.vim/*.vim
 autocmd BufWritePost ~/.vim/*.vim source $MYVIMRC
 
-autocmd BufNewFile,BufReadPre *.h,*.hh,*.hu,*.c,*.cc,*.cu,*.cpp IP omnicpp
-autocmd BufNewFile,BufReadPre *.py IP python-mode
-autocmd BufNewFile,BufReadPre *.tex IP latex-box
+autocmd BufNewFile,BufReadPre *.h,*.hh,*.hu,*.c,*.cc,*.cu,*.cpp silent IP omnicpp
+autocmd BufNewFile,BufReadPre *.py silent IP python-mode
+autocmd BufNewFile,BufReadPre *.tex silent IP latex-box
 
 source ~/.vim/interface-settings.vim
 source ~/.vim/syntax-settings.vim
