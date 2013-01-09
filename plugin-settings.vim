@@ -52,7 +52,8 @@ let OmniCpp_MayCompleteArrow = 0
 let no_py_maps = 1
 let g:pymode_rope_guess_project = 0
 let g:pymode_lint_write = 1
-let g:pymode_lint_checker = "pyflakes,mccabe"
+let g:pymode_lint_checker = "pyflakes,mccabe,pep8"
+let pymode_rope_vim_completion = 0
 
 " snipmate
 let g:snips_trigger_key = '<C-CR>'
