@@ -49,3 +49,6 @@
 [submodule "bundle/latex-box"]
 	path = ipi/latex-box
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
