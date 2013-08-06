@@ -29,6 +29,7 @@ Bundle 'taglist.vim'
 Bundle 'tomtom/tlib_vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'chrismetcalf/vim-yankring'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'ZoomWin'
 
 filetype plugin indent on
