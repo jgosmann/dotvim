@@ -1,9 +1,11 @@
 filetype off
 set nocompatible
 
-call pathogen#infect()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 call ipi#inspect()
+
+source ~/.vim/bundles.vim
 
 filetype plugin indent on
 

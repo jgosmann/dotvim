@@ -1,5 +1,4 @@
 " a.vim
-source ~/.vim/bundle/a/a.vim
 let g:alternateExtensions_{'cc'} = "h,hh"
 let g:alternateExtensions_{'hh'} = "cc"
 let g:alternateExtensions_{'l'} = "y"
