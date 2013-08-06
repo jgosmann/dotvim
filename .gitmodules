@@ -1,6 +1,0 @@
-[submodule "ipi/python-mode"]
-	path = ipi/python-mode
-	url = git://github.com/klen/python-mode.git
-[submodule "ipi/latex-box"]
-       path = ipi/latex-box
-       url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
