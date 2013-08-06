@@ -55,3 +55,7 @@ let Tlist_Show_One_File = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
 let Tlist_arduino_settings = 'c;f:Functions'
+
+" UltiSnip
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'

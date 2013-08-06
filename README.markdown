@@ -45,6 +45,8 @@ In normal mode:
 - `<leader>u` toggle Gundo plugin.
 - `<leader>p` toggle Rainbow parenthesis plugin.
 - `<C-l>` toggle the Taglist plugin.
+- `<C-j>` to expand snippet or jump to the next place holder.
+- `<C-k>` to jump to the previous placeholder in a snippet.
 - `<leader>ev` opens the .vimrc file.
 
 Neo2 Keyboard Layout remappings
@@ -97,13 +99,13 @@ Included Plugins
 - [python-mode](https://github.com/klen/python-mode) (in fact a [slightly modified
   fork by me](https://github.com/jgosmann/python-mode) is used)
 - [Rainbow Parenthesis](http://www.vim.org/scripts/script.php?script_id=1561)
-- [Snipmate](http://www.vim.org/scripts/script.php?script_id=2540)
 - [Solarized](http://ethanschoonover.com/solarized)
 - [Supertab](http://www.vim.org/scripts/script.php?script_id=1643)
 - [Surround](https://github.com/tpope/vim-surround)
 - [Syntastic](https://github.com/scrooloose/syntastic)
 - [Taglist](http://vim-taglist.sourceforge.net/)
 - [tlib](http://www.vim.org/scripts/script.php?script_id=1863)
+- [UltiSnips](https://github.com/SirVer/ultisnips)
 - [unimpaired](http://www.vim.org/scripts/script.php?script_id=1590)
 - [vundle](https://github.com/gmarik/vundle)
 - [yankring](http://www.vim.org/scripts/script.php?script_id=1234)
