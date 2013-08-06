@@ -7,9 +7,6 @@ nnoremap ö :b#<CR>
 nnoremap Ö :A<CR>
 nnoremap ä <C-]>
 
-" fix number with unit in LaTeX Document
-nnoremap <leader>u :s/\(\d\+\)\s*\(\w\+\)/\\SI{\1}{\2}<CR>
-
 " fullscreen
 nnoremap <D-CR> :set fullscreen!<CR>
 
@@ -28,3 +25,21 @@ nnoremap <leader>f gqip
 " quick git commits
 nnoremap <leader>g :Gcommit -a<CR>i
 
+" gundo
+noremap <leader>u :GundoToggle<CR>
+
+" latex-box
+nnoremap <silent> <leader>ls :silent !/Applications/Skim.app/Contents/SharedSupport/displayline <C-R>=line('.')<CR> "<C-R>=LatexBox_GetOutputFile()<CR>" "%:p" <CR>
+
+" rainbow parenthesis
+noremap <leader>r :RainbowParenthesesToggle<CR>
+
+" taglist
+noremap <C-l> :TlistToggle<CR>
+
+" unimpaired: text bubbling
+vmap <D-Up> [egv
+vmap <D-Down> ]egv
+
+" YouCompleteMe
+noremap gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
