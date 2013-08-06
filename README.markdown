@@ -4,9 +4,28 @@ Installation
 1. `git clone https://github.com/jgosmann/dotvim.git ~/.vim`
 2. `vim -u ~/.vim/bundles.vim +BundleInstall`
 3. `ln -s ~/.vim/vimrc ~/.vimrc`
+
+Compile Command-T
+-----------------
+
 4. `cd ~/.vim/bundle/command-t/ruby/command-t/`
 5. `ruby extconf.rb`
 6. `make`
+
+Compile YouCompleteMe
+---------------------
+
+7. `mkdir ~/ycm_build && cd ~/ycm_build`
+8. `cmake -G "Unix Makefiles" -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/bundle/YouCompleteMe/cpp`
+9. `make ycm_core`
+10. `cd - && rm -r ~/ycm_build`
+
+Note that `ycm_core` has to be compiled with the same Python library that is
+used by your Vim. To change the Python library use `ccmake .` between step 8 and
+9. Within `ccmake` press `t` to enable the advanced mode, look for
+`PYTHON_EXECUTABLE`, `PYTHON_INCLUDE_DIR` and `PYTHON_LIBRARY` to set them to
+appropriate paths. Aftewards press `c` (to configure), `e` (to exit the
+appearing window) and `g` (to generate makefiles and exit `ccmake`).
 
 Key Mappings
 ============
