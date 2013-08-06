@@ -46,11 +46,9 @@ let OmniCpp_MayCompleteDot = 0
 let OmniCpp_MayCompleteArrow = 0
 
 " python-mode
-let no_py_maps = 1
 let g:pymode_rope_guess_project = 0
-let g:pymode_lint_write = 1
+let g:pymode_lint_write = 0
 let g:pymode_lint_checker = "pyflakes,mccabe,pep8"
-let pymode_rope_vim_completion = 0
 
 " supertab
 function! LatexTagContext()
