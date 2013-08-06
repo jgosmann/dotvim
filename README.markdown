@@ -33,9 +33,10 @@ Key Mappings
 In normal mode:
 
 - `ü` is the leader key.
-- `ö` switches to alternate buffer (`:b#`)
-- `Ö` switches to alternate file, e.g. .h to .cpp (`:A`, a.vim plugin)
-- `ä` jumps to tag (`<C-]>`)
+- `ö` switches to alternate buffer (`:b#`).
+- `Ö` switches to alternate file, e.g. .h to .cpp (`:A`, a.vim plugin).
+- `ä` jumps to tag (`<C-]>`).
+- `gd` executes GoToDefinitionElseDeclaration from the YouCompleteMe plugin.
 - Arrow keys allow you to move between windows.
 - `<D-CR>` toggles full screen mode.
 - `<D-Up>` and `<D-Down>` move selected text one line up or down (`[egv` and

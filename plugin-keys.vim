@@ -14,3 +14,5 @@ noremap <C-l> :TlistToggle<CR>
 vmap <D-Up> [egv
 vmap <D-Down> ]egv
 
+" YouCompleteMe
+noremap gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
