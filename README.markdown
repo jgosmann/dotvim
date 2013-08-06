@@ -2,12 +2,7 @@ Installation
 ============
 
 1. `git clone https://github.com/jgosmann/dotvim.git ~/.vim`
-2. `cd ~/.vim && git submodule update --init`
-    1. If you are asked for any passwords just press return.
-    2. We are not using `git clone --recursive` because it is enough to check
-       out one level of submodules. Moreover, some of the submodules in deeper
-       levels use the git:// protocol (instead of https://) which may be
-       blocked by firewalls.
+2. `vim -u ~/.vim/bundles.vim +BundleInstall`
 3. `ln -s ~/.vim/vimrc ~/.vimrc`
 4. `cd ~/.vim/bundle/command-t/ruby/command-t/`
 5. `ruby extconf.rb`
@@ -71,21 +66,16 @@ Included Plugins
 - [Command-t](https://wincent.com/products/command-t)
 - [Conque](http://code.google.com/p/conque/)
 - [Ctags-highlighting](http://www.cgtk.co.uk/vim-scripts/taghighlight)
-- [Eclim](http://eclim.org/) (can be loaded on demand with IPI)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
 - [Gist](https://github.com/mattn/gist-vim)
 - [GLSL](http://www.vim.org/scripts/script.php?script_id=1002)
 - [Gundo](http://sjl.bitbucket.org/gundo.vim/)
-- [IPI](https://github.com/jceb/vim-ipi)
-- [latex-box](https://github.com/LaTeX-Box-Team/LaTeX-Box) (will only be loaded
-  for LaTeX files)
+- [latex-box](https://github.com/LaTeX-Box-Team/LaTeX-Box)
 - [mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)
 - [Nerd Commenter](http://www.vim.org/scripts/script.php?script_id=1218)
-- [OmniCpp](http://www.vim.org/scripts/script.php?script_id=1520) (will only be
-  loaded for C/C++ files)
-- [Pathogen](https://github.com/tpope/vim-pathogen)
-- [python-mode](https://github.com/klen/python-mode) (will only be loaded for
-  Python files)
+- [OmniCpp](http://www.vim.org/scripts/script.php?script_id=1520)
+- [python-mode](https://github.com/klen/python-mode) (in fact a [slightly modified
+  fork by me](https://github.com/jgosmann/python-mode) is used)
 - [Rainbow Parenthesis](http://www.vim.org/scripts/script.php?script_id=1561)
 - [Snipmate](http://www.vim.org/scripts/script.php?script_id=2540)
 - [Solarized](http://ethanschoonover.com/solarized)
@@ -94,6 +84,7 @@ Included Plugins
 - [Taglist](http://vim-taglist.sourceforge.net/)
 - [tlib](http://www.vim.org/scripts/script.php?script_id=1863)
 - [unimpaired](http://www.vim.org/scripts/script.php?script_id=1590)
+- [vundle](https://github.com/gmarik/vundle)
 - [yankring](http://www.vim.org/scripts/script.php?script_id=1234)
 - [zoomwin](http://www.vim.org/scripts/script.php?script_id=508)
 
