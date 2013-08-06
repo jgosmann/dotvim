@@ -50,29 +50,8 @@ let g:pymode_rope_guess_project = 0
 let g:pymode_lint_write = 0
 let g:pymode_lint_checker = "pyflakes,mccabe,pep8"
 
-" supertab
-function! LatexTagContext()
-    let curline = getline('.')
-    let cnum = col('.')
-    if (&ft == 'tex' && curline =~ '.*\\\S\+\%' . cnum . 'c')
-        return "\<c-x>\<c-o>"
-    endif
-endfunction
-
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabCompletionContexts = ['LatexTagContext', 's:ContextText', 's:ContextDiscover']
-let g:SuperTabContextDefaultCompletionType = "<c-x><c-n>"
-let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
-
 " taglist
 let Tlist_Show_One_File = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
 let Tlist_arduino_settings = 'c;f:Functions'
-
-" Setup rainbow parenthesis
-"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadRound()
-"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadSquare()
-"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadBraces()
-"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadChevrons()
-
