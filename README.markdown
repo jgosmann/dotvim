@@ -81,10 +81,12 @@ Included Plugins
 - [Solarized](http://ethanschoonover.com/solarized)
 - [Supertab](http://www.vim.org/scripts/script.php?script_id=1643)
 - [Surround](https://github.com/tpope/vim-surround)
+- [Syntastic](https://github.com/scrooloose/syntastic)
 - [Taglist](http://vim-taglist.sourceforge.net/)
 - [tlib](http://www.vim.org/scripts/script.php?script_id=1863)
 - [unimpaired](http://www.vim.org/scripts/script.php?script_id=1590)
 - [vundle](https://github.com/gmarik/vundle)
 - [yankring](http://www.vim.org/scripts/script.php?script_id=1234)
+- [YouCompleteMe](http://valloric.github.io/YouCompleteMe/)
 - [zoomwin](http://www.vim.org/scripts/script.php?script_id=508)
 
