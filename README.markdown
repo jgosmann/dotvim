@@ -43,7 +43,7 @@ In normal mode:
   `]egv` using the Unimpaired plugin).
 - `<leader>f` formats the current paragraph (`gqip`).
 - `<leader>u` toggle Gundo plugin.
-- `<leader>r` toggle Rainbow parenthesis plugin.
+- `<leader>p` toggle Rainbow parenthesis plugin.
 - `<C-l>` toggle the Taglist plugin.
 - `<leader>ev` opens the .vimrc file.
 

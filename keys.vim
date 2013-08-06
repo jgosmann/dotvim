@@ -32,7 +32,7 @@ noremap <leader>u :GundoToggle<CR>
 nnoremap <silent> <leader>ls :silent !/Applications/Skim.app/Contents/SharedSupport/displayline <C-R>=line('.')<CR> "<C-R>=LatexBox_GetOutputFile()<CR>" "%:p" <CR>
 
 " rainbow parenthesis
-noremap <leader>r :RainbowParenthesesToggle<CR>
+noremap <leader>p :RainbowParenthesesToggle<CR>
 
 " taglist
 noremap <C-l> :TlistToggle<CR>
