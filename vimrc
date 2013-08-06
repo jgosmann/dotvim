@@ -1,12 +1,4 @@
-filetype off
-set nocompatible
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
 source ~/.vim/bundles.vim
-
-filetype plugin indent on
 
 autocmd! BufWritePost .vimrc
 autocmd BufWritePost .vimrc source $MYVIMRC

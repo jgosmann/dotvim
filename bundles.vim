@@ -1,3 +1,9 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 Bundle 'gmarik/vundle'
 
 Bundle 'a.vim'
@@ -24,3 +30,5 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'chrismetcalf/vim-yankring'
 Bundle 'ZoomWin'
+
+filetype plugin indent on
