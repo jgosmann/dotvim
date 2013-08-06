@@ -3,7 +3,7 @@ set nocompatible
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-call ipi#inspect()
+"call ipi#inspect()
 
 source ~/.vim/bundles.vim
 
