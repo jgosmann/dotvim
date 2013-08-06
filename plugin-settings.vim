@@ -65,8 +65,10 @@ let g:SuperTabContextDefaultCompletionType = "<c-x><c-n>"
 let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 
 " taglist
+let Tlist_Show_One_File = 1
+let Tlist_Use_Right_Window = 1
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
-let tlist_arduino_settings = 'c;f:Functions'
+let Tlist_arduino_settings = 'c;f:Functions'
 
 " Setup rainbow parenthesis
 "autocmd BufRead,BufNew * call rainbow_parenthsis#LoadRound()
