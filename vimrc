@@ -15,4 +15,3 @@ source ~/.vim/keys.vim
 source ~/.vim/keys-neo2.vim
 
 source ~/.vim/functions.vim
-
