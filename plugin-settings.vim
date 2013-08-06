@@ -33,8 +33,6 @@ let g:EclimPythonValidate=0
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 
-"let g:Tex_MultipleCompileFormats = 'dvi,pdf'
-
 " latex-box
 let g:LatexBox_Folding = 1
 let g:LatexBox_viewer = 'open -a Skim'
