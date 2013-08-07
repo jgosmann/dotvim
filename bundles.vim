@@ -28,7 +28,7 @@ Bundle 'taglist.vim'
 Bundle 'tomtom/tlib_vim'
 Bundle 'SirVer/ultisnips'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'chrismetcalf/vim-yankring'
+Bundle 'YankRing.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'ZoomWin'
 
