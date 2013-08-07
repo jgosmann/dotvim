@@ -47,8 +47,11 @@ let OmniCpp_MayCompleteArrow = 0
 
 " python-mode
 let g:pymode_rope_guess_project = 0
-let g:pymode_lint_write = 0
+let g:pymode_lint_write = 1
 let g:pymode_lint_checker = "pyflakes,mccabe,pep8"
+
+" syntastic
+let g:syntastic_python_checkers = []
 
 " taglist
 let Tlist_Show_One_File = 1
