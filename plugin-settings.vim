@@ -1,5 +1,4 @@
 " a.vim
-source ~/.vim/bundle/a/a.vim
 let g:alternateExtensions_{'cc'} = "h,hh"
 let g:alternateExtensions_{'hh'} = "cc"
 let g:alternateExtensions_{'l'} = "y"
@@ -34,8 +33,6 @@ let g:EclimPythonValidate=0
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 
-"let g:Tex_MultipleCompileFormats = 'dvi,pdf'
-
 " latex-box
 let g:LatexBox_Folding = 1
 let g:LatexBox_viewer = 'open -a Skim'
@@ -49,36 +46,19 @@ let OmniCpp_MayCompleteDot = 0
 let OmniCpp_MayCompleteArrow = 0
 
 " python-mode
-let no_py_maps = 1
 let g:pymode_rope_guess_project = 0
 let g:pymode_lint_write = 1
 let g:pymode_lint_checker = "pyflakes,mccabe,pep8"
-let pymode_rope_vim_completion = 0
 
-" snipmate
-let g:snips_trigger_key = '<C-CR>'
-
-" supertab
-function! LatexTagContext()
-    let curline = getline('.')
-    let cnum = col('.')
-    if (&ft == 'tex' && curline =~ '.*\\\S\+\%' . cnum . 'c')
-        return "\<c-x>\<c-o>"
-    endif
-endfunction
-
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabCompletionContexts = ['LatexTagContext', 's:ContextText', 's:ContextDiscover']
-let g:SuperTabContextDefaultCompletionType = "<c-x><c-n>"
-let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
+" syntastic
+let g:syntastic_python_checkers = []
 
 " taglist
+let Tlist_Show_One_File = 1
+let Tlist_Use_Right_Window = 1
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
-let tlist_arduino_settings = 'c;f:Functions'
+let Tlist_arduino_settings = 'c;f:Functions'
 
-" Setup rainbow parenthesis
-"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadRound()
-"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadSquare()
-"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadBraces()
-"autocmd BufRead,BufNew * call rainbow_parenthsis#LoadChevrons()
-
+" UltiSnip
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'

@@ -16,6 +16,7 @@ noremap l t
 autocmd filetype netrw noremap <buffer> <Up> <Up>
 autocmd filetype netrw noremap <buffer> <Down> <Down>
 
+" Fix ConqueTerm keys
 function! FixConqueKeys(term)
     sil exe 'noremap <silent> <buffer> s h'
     sil exe 'noremap <silent> <buffer> r gk'
