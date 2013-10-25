@@ -1,3 +1,4 @@
+imap <buffer> { {<C-Space>
 imap <buffer> [[ \begin{
 imap <buffer> ]] <Plug>LatexCloseCurEnv
 nmap <buffer> <F5> <Plug>LatexChangeEnv
