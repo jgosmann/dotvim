@@ -37,6 +37,7 @@ let g:gist_detect_filetype = 1
 let g:LatexBox_Folding = 1
 let g:LatexBox_viewer = 'open -a Skim'
 let g:LatexBox_ignore_warnings = ['specifier changed to']
+let g:LatexBox_quickfix = 2
 
 " Man pages
 runtime ftplugin/man.vim
