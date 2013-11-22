@@ -36,6 +36,7 @@ let g:gist_detect_filetype = 1
 " latex-box
 let g:LatexBox_Folding = 1
 let g:LatexBox_viewer = 'open -a Skim'
+let g:LatexBox_ignore_warnings = ['specifier changed to']
 
 " Man pages
 runtime ftplugin/man.vim
@@ -52,6 +53,7 @@ let g:pymode_lint_checker = "pyflakes,mccabe,pep8"
 
 " syntastic
 let g:syntastic_python_checkers = []
+let g:syntastic_tex_checkers = ['chktex']
 
 " taglist
 let Tlist_Show_One_File = 1
