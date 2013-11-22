@@ -34,6 +34,7 @@ let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 
 " latex-box
+let g:LatexBox_latexmk_async = 1
 let g:LatexBox_Folding = 1
 let g:LatexBox_viewer = 'open -a Skim'
 let g:LatexBox_ignore_warnings = ['specifier changed to']
