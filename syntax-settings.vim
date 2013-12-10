@@ -34,5 +34,5 @@ set showbreak=>
 
 autocmd BufNewFile,BufRead *.frag,*.fs,*.glsl set filetype=glsl400
 autocmd BufNewFile,BufRead *.ino set filetype=arduino
-autocmd BufNewFile *.tex set filetype=tex
+autocmd BufNewFile,BufRead *.tex set filetype=tex
 
