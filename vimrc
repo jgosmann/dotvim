@@ -5,6 +5,7 @@ autocmd BufWritePost .vimrc source $MYVIMRC
 autocmd! BufWritePost ~/.vim/*.vim
 autocmd BufWritePost ~/.vim/*.vim source $MYVIMRC
 
+set encoding=utf-8
 source ~/.vim/interface-settings.vim
 source ~/.vim/syntax-settings.vim
 source ~/.vim/indentation-settings.vim
