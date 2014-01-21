@@ -66,3 +66,8 @@ let Tlist_arduino_settings = 'c;f:Functions'
 " UltiSnip
 let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+
+" YouCompleteMe
+let g:ycm_filetype_specific_completion_to_disable = {
+  \ 'python' : 1,
+  \}
