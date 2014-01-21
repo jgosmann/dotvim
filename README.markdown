@@ -18,6 +18,16 @@ Compile YouCompleteMe
 7. `cd ~/.vim/bundle/YouCompleteMe`
 8. `./install.sh --clang-completer`
 
+
+Checkout working python-mode
+----------------------------
+
+Unfortunately, the Rope autocompletion of python-mode is currently not working
+as expected (see [issue #366](https://github.com/klen/python-mode/issues/366)).
+Thus, it is best to use an older – working version – of that plugin:
+
+9. `cd ~/.vim/bundle/python-mode && git checkout 16c0a719a`
+
 Key Mappings
 ============
 
