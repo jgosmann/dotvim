@@ -43,6 +43,9 @@ let g:LatexBox_quickfix = 2
 " Man pages
 runtime ftplugin/man.vim
 
+" vim-notes
+let g:notes_directories = ['~/Documents/notes']
+
 " omnicpp
 let OmniCpp_ShowPrototypeInAbbr = 1
 let OmniCpp_MayCompleteDot = 0
