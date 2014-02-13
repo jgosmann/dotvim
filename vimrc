@@ -1,4 +1,7 @@
 source ~/.vim/bundles.vim
+if filereadable('~/.local/share/vim/plugin/ropevim.vim')
+    source ~/.local/share/vim/plugin/ropevim.vim
+endif
 
 autocmd! BufWritePost .vimrc
 autocmd BufWritePost .vimrc source $MYVIMRC
