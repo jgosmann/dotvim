@@ -60,8 +60,10 @@ let g:pymode_lint_checker = "pyflakes,mccabe,pep8"
 let g:pymode_lint_ignore = 'C0110,I0011'
 
 " syntastic
-let g:syntastic_python_checkers = []
+let g:syntastic_python_checkers = ['pylint', 'pep8']
 let g:syntastic_tex_checkers = ['chktex']
+let g:syntastic_python_pylint_quiet_messages = {
+    \ 'regex': '\m\[C0111\(, process\)\?\]' }
 
 " taglist
 let Tlist_Show_One_File = 1
