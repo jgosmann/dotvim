@@ -1,6 +1,8 @@
 source ~/.vim/bundles.vim
-if filereadable('~/.local/share/vim/plugin/ropevim.vim')
+if filereadable(expand('~/.local/share/vim/plugin/ropevim.vim'))
     source ~/.local/share/vim/plugin/ropevim.vim
+elseif filereadable(expand('~/Library/Python/2.7/share/vim/plugin/ropevim.vim'))
+    source ~/Library/Python/2.7/share/vim/plugin/ropevim.vim
 endif
 
 autocmd! BufWritePost .vimrc
