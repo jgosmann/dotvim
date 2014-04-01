@@ -56,3 +56,17 @@ fun! RunTests(cmd)
     exe "r!" . a:cmd
 endfun
 
+" Adapted from http://stackoverflow.com/questions/3881534/set-python-virtualenv-in-vim
+fun! LoadVirtualEnv(path)
+    let activate_this = a:path . '/bin/activate_this.py'
+    if getftype(a:path) == "dir" && filereadable(activate_this)
+        python << EOF
+import vim
+activate_this = vim.eval('l:activate_this')
+execfile(activate_this, dict(__file__=activate_this))
+EOF
+        echoerr 'Success.'
+    else
+        echoerr 'Not a valid virtualenv.'
+    endif
+endfunction
