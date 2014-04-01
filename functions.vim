@@ -61,9 +61,13 @@ fun! LoadVirtualEnv(path)
     let activate_this = a:path . '/bin/activate_this.py'
     if getftype(a:path) == "dir" && filereadable(activate_this)
         python << EOF
+import os
+import sys
 import vim
 activate_this = vim.eval('l:activate_this')
 execfile(activate_this, dict(__file__=activate_this))
+if 'PYTHONPATH' not in os.environ:
+    os.environ['PYTHONPATH'] = ':' + os.getcwd() + ':' + ':'.join(sys.path)
 EOF
         echoerr 'Success.'
     else
