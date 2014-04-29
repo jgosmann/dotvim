@@ -30,7 +30,6 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'SirVer/ultisnips'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'YankRing.vim'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'mattn/webapi-vim'
 Bundle 'ZoomWin'
 
