@@ -88,8 +88,6 @@ Included Plugins
 - [mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)
 - [Nerd Commenter](http://www.vim.org/scripts/script.php?script_id=1218)
 - [OmniCpp](http://www.vim.org/scripts/script.php?script_id=1520)
-- [python-mode](https://github.com/klen/python-mode) (in fact a [slightly modified
-  fork by me](https://github.com/jgosmann/python-mode) is used)
 - [Rainbow Parenthesis](http://www.vim.org/scripts/script.php?script_id=1561)
 - [Solarized](http://ethanschoonover.com/solarized)
 - [Supertab](http://www.vim.org/scripts/script.php?script_id=1643)
