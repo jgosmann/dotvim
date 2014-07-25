@@ -5,10 +5,11 @@ elseif filereadable(expand('~/Library/Python/2.7/share/vim/plugin/ropevim.vim'))
     source ~/Library/Python/2.7/share/vim/plugin/ropevim.vim
 endif
 
-autocmd! BufWritePost .vimrc
-autocmd BufWritePost .vimrc source $MYVIMRC
-autocmd! BufWritePost ~/.vim/*.vim
-autocmd BufWritePost ~/.vim/*.vim source $MYVIMRC
+augroup vimrc
+    autocmd!
+    autocmd BufWritePost .vimrc source $MYVIMRC
+    autocmd BufWritePost ~/.vim/*.vim source $MYVIMRC
+augroup END
 
 set encoding=utf-8
 source ~/.vim/interface-settings.vim

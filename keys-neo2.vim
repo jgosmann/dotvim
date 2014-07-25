@@ -13,8 +13,10 @@ noremap h r
 noremap l t
 
 " Allow arrow keys in file browser
-autocmd filetype netrw noremap <buffer> <Up> <Up>
-autocmd filetype netrw noremap <buffer> <Down> <Down>
+augroup netrw
+    autocmd filetype netrw noremap <buffer> <Up> <Up>
+    autocmd filetype netrw noremap <buffer> <Down> <Down>
+augroup END
 
 " Fix ConqueTerm keys
 function! FixConqueKeys(term)
