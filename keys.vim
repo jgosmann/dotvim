@@ -16,6 +16,10 @@ noremap <Down> <C-w>j
 noremap <Up> <C-w>k
 noremap <Right> <C-w>l
 
+" search
+nnoremap / /\v
+nnoremap ? ?\v
+
 " quickly edit vimrc
 nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
 
