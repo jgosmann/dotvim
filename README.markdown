@@ -1,8 +1,8 @@
 Installation
 ============
 
-1. `git clone https://github.com/jgosmann/dotvim.git ~/.vim`
-2. `vim -u ~/.vim/bundles.vim +BundleInstall`
+1. `git clone --recursive https://github.com/jgosmann/dotvim.git ~/.vim`
+2. `vim -u ~/.vim/bundles.vim +PluginInstall`
 3. `ln -s ~/.vim/vimrc ~/.vimrc`
 
 Compile Command-T
