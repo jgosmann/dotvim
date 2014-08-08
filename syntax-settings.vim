@@ -31,11 +31,3 @@ set listchars=tab:▸\ ,trail:.,extends:¬,nbsp:.
 highlight Trailspaces guifg=#8a8aa9
 match TrailSpaces /\s\+$/
 set showbreak=>
-
-augroup filetypes
-    autocmd!
-    autocmd BufNewFile,BufRead *.frag,*.fs,*.glsl set filetype=glsl400
-    autocmd BufNewFile,BufRead *.ino set filetype=arduino
-    autocmd BufNewFile,BufRead *.tex set filetype=tex
-    autocmd BufNewFile,BufRead *.hoc set filetype=hoc
-augroup END
