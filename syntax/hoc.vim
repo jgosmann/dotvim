@@ -1,3 +1,7 @@
+if exists("b:current_syntax")
+    finish
+endif
+
 syn keyword Statement help return break continue stop print delete read debug em setpointer insert uninsert
 syn keyword Statement public external
 syn keyword Statement new nextgroup=objinit skipwhite
@@ -27,3 +31,5 @@ syn region block start="{" end="}" fold transparent
 
 highlight def link namedecl Type
 highlight def link objinit Type
+
+let b:current_syntax = "hoc"
