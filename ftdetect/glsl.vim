@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.frag,*.fs,*.glsl set filetype=glsl400
+autocmd BufNewFile,BufRead *.frag,*.fs,*.glsl setfiletype glsl400

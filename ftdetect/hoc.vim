@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.hoc set filetype=hoc
+autocmd BufNewFile,BufRead *.hoc setfiletype hoc
