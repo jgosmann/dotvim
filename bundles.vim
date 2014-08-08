@@ -1,35 +1,36 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'a.vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'vim-scripts/Arduino-syntax-file'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'wincent/Command-T'
-Bundle 'Conque-Shell'
-Bundle 'vim-scripts/CTAGS-Highlighting'
-Bundle 'tpope/vim-fugitive'
-Bundle 'mattn/gist-vim'
-Bundle 'glsl.vim'
-Bundle 'sjl/gundo.vim'
-Bundle 'LaTeX-Box-Team/LaTeX-Box'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'OmniCppComplete'
-Bundle 'rainbow_parentheses.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/syntastic'
-Bundle 'taglist.vim'
-Bundle 'tomtom/tlib_vim'
-Bundle 'SirVer/ultisnips'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'YankRing.vim'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'mattn/webapi-vim'
-Bundle 'ZoomWin'
+Plugin 'a.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'vim-scripts/Arduino-syntax-file'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'wincent/Command-T'
+Plugin 'Conque-Shell'
+Plugin 'vim-scripts/CTAGS-Highlighting'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mattn/gist-vim'
+Plugin 'glsl.vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'OmniCppComplete'
+Plugin 'rainbow_parentheses.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'taglist.vim'
+Plugin 'tomtom/tlib_vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'YankRing.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'mattn/webapi-vim'
+Plugin 'ZoomWin'
 
+call vundle#end()
 filetype plugin indent on
