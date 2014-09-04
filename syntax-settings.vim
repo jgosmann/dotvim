@@ -1,5 +1,9 @@
-syntax enable
-set background=light
+if &diff
+    syntax manual
+else
+    syntax on
+endif
+
 colorscheme solarized
 
 hi link DefinedName PreProc
