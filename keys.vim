@@ -6,6 +6,7 @@ let maplocalleader = "ü"
 nnoremap ö :b#<CR>
 nnoremap Ö :A<CR>
 nnoremap ä <C-]>
+nnoremap <leader>d :call DiffToggle()<CR>
 
 " fullscreen
 nnoremap <D-CR> :set fullscreen!<CR>

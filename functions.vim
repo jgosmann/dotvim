@@ -1,4 +1,12 @@
 
+function! DiffToggle()
+    if &diff
+        diffoff
+    else
+        diffthis
+    endif
+endfunction
+
 function! PythonAndRopeComplete(findstart, base)
     if a:findstart
         let result = pythoncomplete#Complete(a:findstart, a:base)
