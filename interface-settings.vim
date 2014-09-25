@@ -6,6 +6,7 @@ set statusline=%n:\ %t%M%R%H%W\ \ %{fugitive#statusline()}%=[%02B]\ \ LF=%{&ff}\
 if has("gui_gtk2")
     set guifont=DejaVu\ Sans\ Mono\ 9
     if has("gui_running")
+        set background=dark
         set lines=70 columns=120
     endif
 else
