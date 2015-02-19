@@ -33,6 +33,9 @@ nnoremap <leader>g :Gcommit -a<CR>i
 " gundo
 noremap <leader>u :GundoToggle<CR>
 
+" Command-T
+nnoremap <leader>T :CommandTFlush<CR>
+
 " latex-box
 nnoremap <silent> <leader>ls :silent !/Applications/Skim.app/Contents/SharedSupport/displayline <C-R>=line('.')<CR> "<C-R>=LatexBox_GetOutputFile()<CR>" "%:p" <CR>
 
