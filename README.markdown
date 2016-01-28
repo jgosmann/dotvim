@@ -16,7 +16,7 @@ Compile YouCompleteMe
 ---------------------
 
 7. `cd ~/.vim/bundle/YouCompleteMe`
-8. `./install.sh --clang-completer`
+8. `python install.py --clang-completer`
 
 
 Key Mappings
