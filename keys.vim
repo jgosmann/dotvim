@@ -37,7 +37,11 @@ noremap <leader>u :GundoToggle<CR>
 nnoremap <leader>T :CommandTFlush<CR>
 
 " latex-box
-nnoremap <silent> <leader>ls :silent !/Applications/Skim.app/Contents/SharedSupport/displayline <C-R>=line('.')<CR> "<C-R>=LatexBox_GetOutputFile()<CR>" "%:p" <CR>
+if has('macunix')
+    nnoremap <silent> <leader>ls :silent !/Applications/Skim.app/Contents/SharedSupport/displayline <C-R>=line('.')<CR> "<C-R>=LatexBox_GetOutputFile()<CR>" "%:p" <CR>
+else
+    nnoremap <silent> <leader>ls :silent !okular --unique "<C-R>=LatexBox_GetOutputFile()<CR>\#src:<C-R>=line('.')<CR>%:p" &<CR>
+endif
 
 " rainbow parenthesis
 noremap <leader>p :RainbowParenthesesToggle<CR>
