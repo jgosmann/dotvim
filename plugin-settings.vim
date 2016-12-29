@@ -61,7 +61,7 @@ let g:pymode_lint_ignore = 'C0110,I0011'
 
 " syntastic
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_python_checkers = ['pylint', 'pep8']
+let g:syntastic_python_checkers = ['pylint', 'flake8']
 let g:syntastic_tex_checkers = ['chktex']
 
 " taglist
