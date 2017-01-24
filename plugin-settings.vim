@@ -39,6 +39,9 @@ let g:LatexBox_Folding = 1
 if has('macunix')
     let g:LatexBox_viewer = 'open -a Skim'
 endif
+if !has('clientserver')
+    let g:LatexBox_latexmk_async = 0
+endif
 let g:LatexBox_ignore_warnings = ['specifier changed to']
 let g:LatexBox_quickfix = 2
 
