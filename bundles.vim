@@ -24,7 +24,11 @@ Plugin 'rainbow_parentheses.vim'
 Plugin 'jgosmann/ropevim'
 Plugin 'sjl/splice.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic'
+if has('job')
+    Plugin 'w0rp/ale'
+else
+    Plugin 'scrooloose/syntastic'
+endif
 Plugin 'taglist.vim'
 Plugin 'tomtom/tlib_vim'
 Plugin 'SirVer/ultisnips'
