@@ -1,3 +1,16 @@
+function! FormatSentenceBreaks(lnum, count, char)
+    if mode() =~ '[iR]'
+        return -1
+    else
+        let end = a:lnum + a:count - 1
+        let p = join(getline(a:lnum, end), ' ')
+        let p = substitute(p, ' \+', ' ', 'g')
+        let formatted = split(p, '\(\\\(begin\|end\|\(sub\)*section\){[^}]*}\|[.?!]\)\zs\s\+')
+        echom join(formatted, '#')
+        execute a:lnum.','.end.'delete _'
+        call append(a:lnum - 1, formatted)
+    endif
+endfunction
 
 function! DiffToggle()
     if &diff

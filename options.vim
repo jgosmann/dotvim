@@ -11,6 +11,7 @@ set foldlevel=2
 autocmd filetype cpp setlocal foldmethod=syntax
 set formatoptions=qrn1c
 autocmd filetype tex,text setlocal formatoptions+=aw
+autocmd filetype tex setlocal formatexpr=FormatSentenceBreaks(v:lnum,v:count,v:char)
 set hidden
 set history=1000
 set incsearch
