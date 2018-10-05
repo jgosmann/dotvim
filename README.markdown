@@ -8,7 +8,7 @@ Installation
 Compile Command-T
 -----------------
 
-4. `cd ~/.vim/bundle/Command-T/ruby/command-t/`
+4. `cd ~/.vim/bundle/Command-T/ruby/command-t/ext/command-t`
 5. `ruby extconf.rb`
 6. `make`
 
