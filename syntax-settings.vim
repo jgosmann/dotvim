@@ -1,5 +1,5 @@
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
 
 hi link DefinedName PreProc
