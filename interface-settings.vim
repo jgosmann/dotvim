@@ -9,10 +9,8 @@ if has("gui_gtk2") || has("gui_qt")
         set background=dark
         set lines=70 columns=120
     endif
-elseif has("windows")
-    set guifont=Menlo:h11
 else
-    set guifont=Menlo:h14
+    set guifont=JetBrainsMono-Regular:h12
 endif
 set guioptions-=T
 set guioptions+=c
