@@ -5,19 +5,6 @@ Installation
 2. `vim -u ~/.vim/bundles.vim +PluginInstall`
 3. `ln -s ~/.vim/vimrc ~/.vimrc`
 
-Compile Command-T
------------------
-
-4. `cd ~/.vim/bundle/Command-T/ruby/command-t/ext/command-t`
-5. `ruby extconf.rb`
-6. `make`
-
-Compile YouCompleteMe
----------------------
-
-7. `cd ~/.vim/bundle/YouCompleteMe`
-8. `python install.py --clang-completer`
-
 
 Key Mappings
 ============
@@ -77,17 +64,13 @@ Included Plugins
 ================
 
 - [a.vim](http://www.vim.org/scripts/script.php?script_id=31)
-- [Command-t](https://wincent.com/products/command-t)
-- [Conque](http://code.google.com/p/conque/)
 - [Ctags-highlighting](http://www.cgtk.co.uk/vim-scripts/taghighlight)
-- [Fugitive](https://github.com/tpope/vim-fugitive)
 - [Gist](https://github.com/mattn/gist-vim)
 - [GLSL](http://www.vim.org/scripts/script.php?script_id=1002)
 - [Gundo](http://sjl.bitbucket.org/gundo.vim/)
 - [latex-box](https://github.com/LaTeX-Box-Team/LaTeX-Box)
 - [mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)
 - [Nerd Commenter](http://www.vim.org/scripts/script.php?script_id=1218)
-- [OmniCpp](http://www.vim.org/scripts/script.php?script_id=1520)
 - [Rainbow Parenthesis](http://www.vim.org/scripts/script.php?script_id=1561)
 - [Solarized](http://ethanschoonover.com/solarized)
 - [Supertab](http://www.vim.org/scripts/script.php?script_id=1643)
@@ -95,10 +78,8 @@ Included Plugins
 - [Syntastic](https://github.com/scrooloose/syntastic)
 - [Taglist](http://vim-taglist.sourceforge.net/)
 - [tlib](http://www.vim.org/scripts/script.php?script_id=1863)
-- [UltiSnips](https://github.com/SirVer/ultisnips)
 - [unimpaired](http://www.vim.org/scripts/script.php?script_id=1590)
 - [vundle](https://github.com/gmarik/vundle)
 - [yankring](http://www.vim.org/scripts/script.php?script_id=1234)
-- [YouCompleteMe](http://valloric.github.io/YouCompleteMe/)
 - [zoomwin](http://www.vim.org/scripts/script.php?script_id=508)
 

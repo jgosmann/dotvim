@@ -22,13 +22,3 @@ augroup netrw
     autocmd filetype netrw noremap <buffer> <Down> <Down>
 augroup END
 
-" Fix ConqueTerm keys
-function! FixConqueKeys(term)
-    sil exe 'noremap <silent> <buffer> s h'
-    sil exe 'noremap <silent> <buffer> r gk'
-    sil exe 'noremap <silent> <buffer> k :echo "Change mode disabled in shell."<CR>'
-    sil exe 'noremap <silent> <buffer> h :echo "Replace mode disabled in shell."<CR>'
-endfunction
-
-call conque_term#register_function('after_startup', 'FixConqueKeys')
-

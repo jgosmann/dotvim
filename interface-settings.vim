@@ -1,6 +1,6 @@
 " Status line
 set ls=2
-set statusline=%n:\ %t%M%R%H%W\ \ %{fugitive#statusline()}%=[%02B]\ \ LF=%{&ff}\ T=%Y\ \ len=%L\ \ %3p%%\ %3l:%-2c\ 
+set statusline=%n:\ %t%M%R%H%W\ \ %=[%02B]\ \ LF=%{&ff}\ T=%Y\ \ len=%L\ \ %3p%%\ %3l:%-2c\ 
 
 " GUI settings
 if has("gui_gtk2") || has("gui_qt")
