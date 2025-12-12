@@ -1,0 +1,13 @@
+" Source the normal .vimrc
+source ~/.vimrc
+
+" Enable incognito mode, where nothing is saved or recorded (other than the actual file)
+set history=0
+set nobackup
+set nomodeline
+set noshelltemp
+set noswapfile
+set noundofile
+set nowritebackup
+set secure
+set viminfo=""
